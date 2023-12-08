@@ -1,6 +1,9 @@
 ## 开发环境
 server:
-  port: 8080
+  address: 0.0.0.0
+  port: 9093
+  tomcat:
+    max-http-form-post-size: 13MB
 
 ## 据源配置
 spring:
@@ -13,9 +16,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mp_db?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: pass123
+    url: jdbc:mysql://sh-cdb-g7jdk2y0.sql.tencentcdb.com:63676/e_archives_private
+    username: artemis
+    password: Q!w2e3r4t5Y^
 
 ## Mybatis
 mybatis:
