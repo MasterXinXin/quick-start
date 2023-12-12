@@ -103,8 +103,9 @@ public class QRCodeFinder {
                 //根据勾股定理，二维码最长的斜线应该是等腰直角三角形的斜线，即为二维码宽度*根号2(约等于1.41....)，按1.5来算
                 result.addAll(convertPointsOne(first, srcImage.width(), srcImage.height()));
                 result.addAll(convertPointsOne(second, srcImage.width(), srcImage.height()));
+            }else{
+                result.add(convertPointsTwo(first, second));
             }
-            result.add(convertPointsTwo(first, second));
         }
         if(points.size() == 1){
             //只确定一点的情况，需要按默认二维码大小截取3部分图像
