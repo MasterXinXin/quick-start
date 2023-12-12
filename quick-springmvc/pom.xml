@@ -28,9 +28,9 @@
         <dependency>
             <groupId>opencv</groupId>
             <artifactId>opencv</artifactId>
-            <version>455</version>
+            <version>452</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/opencv-455.jar</systemPath>
+            <systemPath>${project.basedir}/src/main/resources/452/lib/opencv-452.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
